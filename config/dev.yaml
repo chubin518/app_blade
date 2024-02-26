@@ -1,0 +1,14 @@
+logging:
+  level: info
+  path: logs/app.log
+database:
+  primary: user
+  datasource:
+    user:
+      dsn: root:abc123456!@tcp(47.116.19.47:13306)/blade_user?charset=utf8mb4&parseTime=True&loc=Local
+      tables:
+        - blade_user
+    product:
+      dsn: root:abc123456!@tcp(47.116.19.47:13306)/blade_product?charset=utf8mb4&parseTime=True&loc=Local
+      tables:
+        - blade_product
